@@ -116,14 +116,37 @@ border-radius:10px;padding:16px 22px;text-align:center;font-size:14px;color:var(
 .foot{text-align:center;padding:26px;color:#b9b2a6;font-size:12px;letter-spacing:.06em;background:#0d0d0d}
 .cta{display:block;width:max-content;margin:8px auto 0;background:linear-gradient(135deg,#d8ab30,#b8901d);
 color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radius:30px;font-size:16px}
-@media(max-width:760px){.pipe-stats,.pipe-cols,.two,.ment,.tech,.org-row,.topbar{grid-template-columns:1fr}
+/* two-column profile + dark sidebar (from original) */
+.cols{display:grid;grid-template-columns:1fr 296px;border-top:1px solid var(--line)}
+.cols>.main{padding:30px 30px 30px 44px;min-width:0}
+.cols>.side{background:#141414;color:var(--creamtext);padding:28px 24px}
+.main .sec{margin-top:0}
+.pill{background:linear-gradient(135deg,#d8ab30,#b8901d);color:#141414;font-size:10px;font-weight:700;letter-spacing:.03em;padding:3px 12px;border-radius:20px;white-space:nowrap;flex:0 0 auto}
+.exp .roleline{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:16px}
+.exp .loc{color:var(--goldd);font-size:12px;font-weight:600;margin-top:2px}
+.side-h{color:var(--gold);font-size:12px;letter-spacing:.13em;text-transform:uppercase;font-weight:700;margin:22px 0 10px}
+.side-h.first{margin-top:0}
+.side .chips span{border-color:var(--gold);color:var(--gold)}
+.mini-row{display:flex;align-items:center;gap:8px;margin:4px 0}
+.mini-yr{width:36px;font-size:11px;color:#b9b2a6}
+.mini-track{flex:1;height:9px;background:#2b2b2b;border-radius:5px;overflow:hidden}
+.mini-fill{height:100%;background:linear-gradient(90deg,#b8901d,var(--gold));border-radius:5px}
+.mini-val{width:22px;text-align:right;font-size:11px;font-weight:700;color:var(--creamtext)}
+.tside{background:#1e1e1e;border:1px solid #2c2c2c;border-radius:9px;padding:9px 11px;margin-bottom:8px;display:flex;gap:9px;align-items:center}
+.tside .ico{font-size:17px;flex:0 0 auto}
+.tside b{display:block;font-size:12px;color:#fff} .tside span{font-size:10px;color:#9a938b}
+.cred{list-style:none}
+.cred li{position:relative;padding:5px 0 5px 20px;font-size:11.5px;color:#d8d1c6;border-bottom:1px solid #262626}
+.cred li:last-child{border-bottom:none}
+.cred li::before{content:"\2713";position:absolute;left:0;color:var(--gold);font-weight:700}
+@media(max-width:760px){.pipe-stats,.pipe-cols,.two,.ment,.tech,.org-row,.topbar,.cols{grid-template-columns:1fr}
 .hero h1{font-size:40px} section{padding:26px 22px} .hero{padding:26px 22px;flex-wrap:wrap}
 .topbar>div{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}}
 @media print{.wrap{max-width:100%;width:100%}
 .topbar{grid-template-columns:repeat(4,1fr)} .topbar.gen3{grid-template-columns:repeat(3,1fr)}
 .pipe-stats{grid-template-columns:repeat(4,1fr)} .tech{grid-template-columns:repeat(3,1fr)}
 .org-row{grid-template-columns:repeat(4,1fr)} .ment3{grid-template-columns:repeat(3,1fr)}
-.pipe-cols,.two{grid-template-columns:1fr 1fr}
+.pipe-cols,.two{grid-template-columns:1fr 1fr} .cols{grid-template-columns:1fr 250px}
 .topbar>div{border-bottom:none}
 .pcol,.card,.node,.tcard,.ment .m,.pstat,tr,.total-strip,.cap,.hero{break-inside:avoid}}
 @page{size:Letter;margin:0}
@@ -194,22 +217,63 @@ color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radi
   </div>
   <div class="cap">The team runs the operational load, so I stay focused on listings, negotiation, and clients. There is real room in this structure to absorb significant additional volume.</div>
 </section>
-<section class="divider">
-  <h2 class="sec">Professional Profile</h2>
-  <p>Licensed since 2004, offering over 20 years of cycle-tested real estate operation across the San Francisco Peninsula, East Bay, and South Bay. Personally mentored and coached by the industry's most elite trainers to maintain a high-velocity pace, with 429+ closings across a 20+ year career. Specializing in bridging traditional physical dominance with modern digital orchestration: an old-school powerhouse running new-school systems.</p>
-  <div class="chips" style="margin-top:14px">
-    <span>SF Peninsula</span><span>East Bay</span><span>South Bay</span><span>Silicon Valley</span>
-    <span>100.8% List-to-Sale</span><span>26 Avg Days on Market</span>
+<section class="cols">
+  <div class="main">
+    <h2 class="sec">Professional Profile</h2>
+    <p>Licensed since 2004, offering over 20 years of cycle-tested real estate operation across the San Francisco Peninsula, East Bay, and South Bay. Personally mentored and coached by the industry's most elite trainers to maintain a high-velocity pace, with 429+ closings across a 20+ year career. Specializing in bridging traditional physical dominance with modern digital orchestration: an old-school powerhouse running new-school systems.</p>
+    <div class="chips" style="margin-top:12px"><span>100.8% List-to-Sale</span><span>26 Avg Days on Market</span></div>
+
+    <h2 class="sec" style="margin-top:28px">Elite Industry Foundation &amp; Mentorship</h2>
+    <div class="ment">
+      <div class="m"><b>Fred Martin Team</b><p>Hand-selected and personally mentored by Peninsula legend Fred Martin, one of the region's most dominant production teams.</p></div>
+      <div class="m"><b>Floyd Wickman — "Sweathogs"</b><p>Personally coached; mastered the high-intensity "Sweathogs" sales discipline for elite listing acquisition.</p></div>
+      <div class="m"><b>Scott Bergman</b><p>Advanced performance coaching in business scaling, technology integration, SEO, and website optimization.</p></div>
+      <div class="m"><b>Will Draper</b><p>Strategic coaching for social media marketing and digital brand presence.</p></div>
+      <div class="m"><b>Krys Benyamein</b><p>Advanced coaching in video marketing, social brand building, and modern digital strategies to attract listings.</p></div>
+    </div>
+
+    <h2 class="sec" style="margin-top:28px">Professional Experience</h2>
+    <div class="exp">
+      <div class="roleline"><b class="title">Realtor — Intero Real Estate Services</b><span class="pill">2010 – Present</span></div>
+      <div class="loc">San Francisco Peninsula</div>
+      <ul>
+        <li>Designed and deployed AI-driven CRM workflows that streamline the transaction lifecycle and client touchpoints.</li>
+        <li>Built and run a proprietary, in-house marketing and automation stack that drives digital omnipresence, fast speed-to-lead, and consistent listing marketing across every channel.</li>
+        <li>Navigated and closed complex transactions including short sales, foreclosures, tenant-occupied and code-enforcement properties.</li>
+        <li>Directed data-driven farming campaigns using digital omnipresence to systematically capture market share.</li>
+      </ul>
+      <div class="roleline"><b class="title">Realtor — Century 21 · Fred Martin Team</b><span class="pill">2004 – 2010</span></div>
+      <div class="loc">San Francisco Peninsula</div>
+      <ul>
+        <li>Operated within one of the Peninsula's most dominant teams, handling heavy operational lifting and relentless farming.</li>
+        <li>Built compliance workflows sustaining a zero-liability track record, achieving a 100.8% list-to-sale ratio.</li>
+      </ul>
+    </div>
   </div>
-  <h3 style="color:var(--gold);font-size:13px;letter-spacing:.1em;text-transform:uppercase;margin:24px 0 4px">Technology &amp; Systems Stack</h3>
-  <div class="tech">
-    <div class="tcard"><span class="ico">&#9881;&#65039;</span><div><b>n8n</b><span>Workflow Automation</span></div></div>
-    <div class="tcard"><span class="ico">&#128225;</span><div><b>GoHighLevel</b><span>CRM &amp; Lead Lifecycle</span></div></div>
-    <div class="tcard"><span class="ico">&#128269;</span><div><b>SEO / AEO</b><span>Search Intelligence</span></div></div>
-    <div class="tcard"><span class="ico">&#129302;</span><div><b>AI Content Engine</b><span>Digital Omnipresence</span></div></div>
-    <div class="tcard"><span class="ico">&#127909;</span><div><b>AI Listing &amp; Video Engine</b><span>Automated Launch Marketing</span></div></div>
-    <div class="tcard"><span class="ico">&#128202;</span><div><b>Market Intelligence</b><span>CMA, Comps &amp; Underwriting</span></div></div>
-  </div>
+
+  <aside class="side">
+    <h3 class="side-h first">Markets Served</h3>
+    <div class="chips"><span>SF Peninsula</span><span>East Bay</span><span>South Bay</span><span>Silicon Valley</span></div>
+
+    <h3 class="side-h">Annual Transactions</h3>
+    <div class="mini-row"><span class="mini-yr">2017</span><div class="mini-track"><div class="mini-fill" style="width:68%"></div></div><span class="mini-val">28</span></div><div class="mini-row"><span class="mini-yr">2018</span><div class="mini-track"><div class="mini-fill" style="width:71%"></div></div><span class="mini-val">29</span></div><div class="mini-row"><span class="mini-yr">2019</span><div class="mini-track"><div class="mini-fill" style="width:49%"></div></div><span class="mini-val">20</span></div><div class="mini-row"><span class="mini-yr">2020</span><div class="mini-track"><div class="mini-fill" style="width:80%"></div></div><span class="mini-val">33</span></div><div class="mini-row"><span class="mini-yr">2021</span><div class="mini-track"><div class="mini-fill" style="width:76%"></div></div><span class="mini-val">31</span></div><div class="mini-row"><span class="mini-yr">2022</span><div class="mini-track"><div class="mini-fill" style="width:100%"></div></div><span class="mini-val">41</span></div><div class="mini-row"><span class="mini-yr">2023</span><div class="mini-track"><div class="mini-fill" style="width:76%"></div></div><span class="mini-val">31</span></div><div class="mini-row"><span class="mini-yr">2024</span><div class="mini-track"><div class="mini-fill" style="width:100%"></div></div><span class="mini-val">41</span></div><div class="mini-row"><span class="mini-yr">2025*</span><div class="mini-track"><div class="mini-fill" style="width:59%"></div></div><span class="mini-val">24</span></div>
+
+    <h3 class="side-h">Technology Stack</h3>
+    <div class="tside"><span class="ico">&#9881;&#65039;</span><div><b>n8n</b><span>Workflow Automation</span></div></div>
+    <div class="tside"><span class="ico">&#128225;</span><div><b>GoHighLevel</b><span>CRM &amp; Lead Lifecycle</span></div></div>
+    <div class="tside"><span class="ico">&#128269;</span><div><b>SEO / AEO</b><span>Search Intelligence</span></div></div>
+    <div class="tside"><span class="ico">&#129302;</span><div><b>AI Content Engine</b><span>Digital Omnipresence</span></div></div>
+    <div class="tside"><span class="ico">&#127909;</span><div><b>AI Listing &amp; Video Engine</b><span>Automated Launch Marketing</span></div></div>
+    <div class="tside"><span class="ico">&#128202;</span><div><b>Market Intelligence</b><span>CMA, Comps &amp; Underwriting</span></div></div>
+
+    <h3 class="side-h">Credentials</h3>
+    <ul class="cred">
+      <li>CA DRE Licensed Realtor — Since 2004</li>
+      <li>Floyd Wickman "Sweathogs" — Certified</li>
+      <li>Member, National Association of Realtors</li>
+      <li>Intero Real Estate — Top Producer</li>
+    </ul>
+  </aside>
 </section>
 
 <section class="divider">
@@ -245,35 +309,6 @@ color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radi
   <div class="two">
     <div><h2 class="sec">Top Markets</h2><div class="mkt"><div class="mkt-top"><span class="mkt-name">East Palo Alto</span><span class="mkt-fig">246 deals &nbsp; <b>$192,274,881</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:100%"></div></div><div class="mkt-sub">Buyer: 112 &nbsp;·&nbsp; Listing: 134</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">San Jose</span><span class="mkt-fig">48 deals &nbsp; <b>$40,127,764</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:20%"></div></div><div class="mkt-sub">Buyer: 35 &nbsp;·&nbsp; Listing: 13</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Redwood City</span><span class="mkt-fig">14 deals &nbsp; <b>$17,162,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:6%"></div></div><div class="mkt-sub">Buyer: 4 &nbsp;·&nbsp; Listing: 10</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Milpitas</span><span class="mkt-fig">9 deals &nbsp; <b>$5,352,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:4%"></div></div><div class="mkt-sub">Buyer: 7 &nbsp;·&nbsp; Listing: 2</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Fremont</span><span class="mkt-fig">9 deals &nbsp; <b>$4,774,888</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:4%"></div></div><div class="mkt-sub">Buyer: 4 &nbsp;·&nbsp; Listing: 5</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">San Francisco</span><span class="mkt-fig">8 deals &nbsp; <b>$12,626,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:3%"></div></div><div class="mkt-sub">Buyer: 7 &nbsp;·&nbsp; Listing: 1</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Santa Clara</span><span class="mkt-fig">7 deals &nbsp; <b>$5,084,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:3%"></div></div><div class="mkt-sub">Buyer: 6 &nbsp;·&nbsp; Listing: 1</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Menlo Park</span><span class="mkt-fig">7 deals &nbsp; <b>$7,977,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:3%"></div></div><div class="mkt-sub">Buyer: 0 &nbsp;·&nbsp; Listing: 7</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Hayward</span><span class="mkt-fig">6 deals &nbsp; <b>$7,520,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:2%"></div></div><div class="mkt-sub">Buyer: 2 &nbsp;·&nbsp; Listing: 4</div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">Sacramento</span><span class="mkt-fig">6 deals &nbsp; <b>$1,515,000</b></span></div><div class="bar-track slim"><div class="bar-fill" style="width:2%"></div></div><div class="mkt-sub">Buyer: 2 &nbsp;·&nbsp; Listing: 4</div></div></div>
     <div><h2 class="sec">Price Range Distribution</h2><div class="mkt"><div class="mkt-top"><span class="mkt-name">Under $250K</span><span class="mkt-fig"><b>32</b> deals &nbsp; $5,426,230</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:27%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$250K–$500K</span><span class="mkt-fig"><b>69</b> deals &nbsp; $24,982,400</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:59%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$500K–$750K</span><span class="mkt-fig"><b>94</b> deals &nbsp; $58,236,488</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:80%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$750K–$1M</span><span class="mkt-fig"><b>117</b> deals &nbsp; $101,697,639</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:100%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$1M–$1.5M</span><span class="mkt-fig"><b>86</b> deals &nbsp; $102,862,588</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:74%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$1.5M–$2M</span><span class="mkt-fig"><b>19</b> deals &nbsp; $30,816,000</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:16%"></div></div></div><div class="mkt"><div class="mkt-top"><span class="mkt-name">$2M+</span><span class="mkt-fig"><b>12</b> deals &nbsp; $30,182,888</span></div><div class="bar-track slim"><div class="bar-fill gold2" style="width:10%"></div></div></div></div>
-  </div>
-</section>
-
-<section class="divider">
-  <h2 class="sec">Foundation &amp; Experience</h2>
-  <div class="ment ment3">
-    <div class="m"><b>Fred Martin Team</b><p>Hand-selected and personally mentored by Peninsula legend Fred Martin, one of the region's most dominant production teams.</p></div>
-    <div class="m"><b>Floyd Wickman — "Sweathogs"</b><p>Personally coached; mastered the high-intensity "Sweathogs" sales discipline for elite listing acquisition.</p></div>
-    <div class="m"><b>Scott Bergman</b><p>Advanced performance coaching focused on business scaling, technology integration, SEO, and website optimization.</p></div>
-    <div class="m"><b>Will Draper</b><p>Strategic coaching for social media marketing and digital brand presence.</p></div>
-    <div class="m"><b>Krys Benyamein</b><p>Advanced coaching in video marketing, social brand building, and modern digital strategies to attract listings.</p></div>
-  </div>
-  <div class="exp" style="margin-top:20px">
-    <b class="title">Realtor — Intero Real Estate Services</b> &nbsp; <span class="yrs">2010 – Present</span>
-    <ul>
-      <li>Designed and deployed AI-driven CRM workflows that streamline the transaction lifecycle and client touchpoints.</li>
-      <li>Built and run a proprietary, in-house marketing and automation stack that drives digital omnipresence, fast speed-to-lead, and consistent listing marketing across every channel.</li>
-      <li>Navigated and closed complex transactions including short sales, foreclosures, tenant-occupied and code-enforcement properties.</li>
-      <li>Directed data-driven farming campaigns using digital omnipresence to systematically capture market share.</li>
-    </ul>
-    <b class="title">Realtor — Century 21 · Fred Martin Team</b> &nbsp; <span class="yrs">2004 – 2010</span>
-    <ul>
-      <li>Operated within one of the Peninsula's most dominant teams, handling heavy operational lifting and relentless farming.</li>
-      <li>Built compliance workflows sustaining a zero-liability track record, achieving a 100.8% list-to-sale ratio.</li>
-    </ul>
-  </div>
-  <div class="chips" style="margin-top:6px">
-    <span>CA DRE Licensed — Since 2004</span><span>Floyd Wickman Certified</span>
-    <span>Member, NAR</span><span>Intero — Top Producer</span>
   </div>
 </section>
 
