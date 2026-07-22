@@ -4,86 +4,87 @@
 <meta name="robots" content="noindex, nofollow">
 <title>Graeham Watts — REALTOR Production Report</title>
 <style>
-:root{--bg:#0d0d0d;--panel:#161616;--panel2:#1e1e1e;--gold:#C9A227;--gold2:#e0bb3f;
---cream:#f3efe6;--muted:#a7a099;--line:#2a2a2a;}
+:root{--bg:#f4f1e9;--ink:#221f1a;--panel:#ffffff;--panel2:#f6f2e9;--gold:#C4972B;--goldd:#8a6a12;
+--gold2:#dcae3c;--dark:#0d0d0d;--creamtext:#f3efe6;--muted:#6f6a62;--line:#e5ded1;--lined:#efe9dd;}
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--cream);font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+body{background:var(--bg);color:var(--ink);font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
 line-height:1.55;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-.wrap{max-width:1080px;margin:0 auto;padding:0 0 60px}
+.wrap{max-width:1080px;margin:0 auto;padding:0;background:var(--bg)}
 h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif}
 .eyebrow{letter-spacing:.22em;text-transform:uppercase;font-size:12px;color:var(--gold);font-weight:700}
-section{padding:34px 44px}
+section{padding:32px 44px}
 .divider{border-top:1px solid var(--line)}
 /* header */
 .hero{background:linear-gradient(160deg,#000 0%,#1a1712 100%);padding:40px 44px 34px;
-display:flex;gap:28px;align-items:center;flex-wrap:wrap}
+display:flex;gap:28px;align-items:center;flex-wrap:wrap;color:var(--creamtext)}
 .avatar{width:118px;height:118px;border-radius:50%;object-fit:cover;border:3px solid var(--gold);flex:0 0 auto}
-.hero h1{font-size:52px;line-height:.98;letter-spacing:.01em}
-.hero .role{letter-spacing:.24em;text-transform:uppercase;font-size:12.5px;color:var(--muted);margin:8px 0 12px}
+.hero h1{font-size:52px;line-height:.98;letter-spacing:.01em;color:#fff}
+.hero .role{letter-spacing:.24em;text-transform:uppercase;font-size:12.5px;color:#b9b2a6;margin:8px 0 12px}
 .contact{font-size:13.5px;color:#cfc8bd}
 .contact span{margin-right:18px;white-space:nowrap}
 .badge{margin-left:auto;text-align:center;border:1px solid var(--gold);border-radius:12px;padding:14px 22px}
 .badge .big{font-family:Georgia,serif;font-size:30px;color:var(--gold);font-weight:700}
-.badge .sm{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.badge .sm{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#b9b2a6}
 /* topbar */
 .topbar{display:grid;grid-template-columns:repeat(4,1fr)}
-.topbar>div{padding:20px 14px;text-align:center;border-right:1px solid rgba(0,0,0,.25)}
+.topbar>div{padding:20px 14px;text-align:center;border-right:1px solid rgba(255,255,255,.08)}
 .topbar .n{font-family:Georgia,serif;font-size:27px;font-weight:700;line-height:1.05}
 .topbar .l{font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
-.tb1{background:linear-gradient(135deg,var(--gold),#b8901d);color:#141414}
-.tb2{background:var(--panel2);color:var(--cream)}
-.tb3{background:var(--panel);color:var(--cream)}
-.tb4{background:linear-gradient(135deg,#241d0f,#1a1710);color:var(--gold2);border-right:none}
+.tb1{background:linear-gradient(135deg,#d8ab30,#b8901d);color:#141414}
+.tb2{background:#161310;color:var(--creamtext)}
+.tb3{background:#0f0d0b;color:var(--creamtext)}
+.tb4{background:linear-gradient(135deg,#2a2212,#1a1710);color:var(--gold2);border-right:none}
 /* tech stack */
 .tech{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:6px}
-.tcard{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:center}
+.tcard{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;gap:12px;align-items:center;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .tcard .ico{font-size:24px;flex:0 0 auto}
-.tcard b{display:block;font-size:14px} .tcard span{font-size:11.5px;color:var(--muted)}
+.tcard b{display:block;font-size:14px;color:var(--ink)} .tcard span{font-size:11.5px;color:var(--muted)}
 /* pipeline */
 .pipe-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:8px;margin-bottom:6px}
 .pipe-sub{color:var(--muted);font-size:13px;margin-bottom:20px}
 .pipe-stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}
-.pstat{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:16px;text-align:center}
+.pstat{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:10px;padding:16px;text-align:center;box-shadow:0 1px 2px rgba(0,0,0,.04)}
 .pstat .n{font-family:Georgia,serif;font-size:34px;font-weight:700;color:var(--gold)}
 .pstat .l{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:2px}
 .pipe-cols{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
 .pcol{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:18px 20px}
-.pcol h3{font-size:15px;color:var(--gold);margin-bottom:10px;display:flex;justify-content:space-between}
+.pcol h3{font-size:15px;color:var(--goldd);margin-bottom:10px;display:flex;justify-content:space-between}
 .pcol h3 .c{color:var(--muted);font-family:sans-serif;font-size:12px;font-weight:400}
 .pcol ul{list-style:none}
-.pcol li{font-size:13.5px;padding:6px 0 6px 18px;position:relative;border-bottom:1px solid #202020}
+.pcol li{font-size:13.5px;padding:6px 0 6px 18px;position:relative;border-bottom:1px solid var(--lined);color:var(--ink)}
 .pcol li:last-child{border-bottom:none}
 .pcol li:before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:50%;background:var(--gold)}
-.total-strip{margin-top:18px;background:linear-gradient(135deg,#1c1810,#241d0f);border:1px solid var(--gold);
-border-radius:10px;padding:14px 20px;text-align:center;font-size:15px}
-.total-strip b{color:var(--gold);font-family:Georgia,serif;font-size:20px}
+.total-strip{margin-top:18px;background:#faf3df;border:1px solid var(--gold);
+border-radius:10px;padding:14px 20px;text-align:center;font-size:15px;color:var(--ink)}
+.total-strip b{color:var(--goldd);font-family:Georgia,serif;font-size:20px}
 /* generic */
-h2.sec{font-size:22px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block}
+h2.sec{font-size:22px;margin-bottom:16px;padding-bottom:8px;border-bottom:2px solid var(--gold);display:inline-block;color:var(--ink)}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:22px}
-.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px}
-.card h3{color:var(--gold);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
-.kv{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid #202020;font-size:14px}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:20px;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.card h3{color:var(--goldd);font-size:14px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:12px}
+.kv{display:flex;justify-content:space-between;padding:7px 0;border-bottom:1px solid var(--lined);font-size:14px}
 .kv:last-child{border-bottom:none} .kv b{font-family:Georgia,serif}
 .bar-row{display:flex;align-items:center;gap:10px;margin:5px 0}
-.bar-yr{width:42px;font-size:12px;color:var(--muted)}
-.bar-val{width:52px;text-align:right;font-size:12.5px;font-weight:600}
-.bar-track{flex:1;height:14px;background:#242424;border-radius:7px;overflow:hidden}
+.bar-yr{width:52px;font-size:12px;color:var(--muted)}
+.bar-val{width:54px;text-align:right;font-size:12.5px;font-weight:600}
+.bar-track{flex:1;height:14px;background:#e9e2d4;border-radius:7px;overflow:hidden}
 .bar-track.slim{height:9px}
-.bar-fill{height:100%;background:linear-gradient(90deg,#b8901d,var(--gold));border-radius:7px}
-.bar-fill.gold2{background:linear-gradient(90deg,#8a6f16,var(--gold2))}
+.bar-fill{height:100%;background:linear-gradient(90deg,#d8ab30,#b8901d);border-radius:7px}
+.bar-fill.gold2{background:linear-gradient(90deg,#c79a2b,#e0bb3f)}
 table{width:100%;border-collapse:collapse;font-size:13.5px}
-th{background:#000;color:var(--cream);text-align:left;padding:10px 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
-td{padding:9px 12px;border-bottom:1px solid #202020} td.r,th.r{text-align:right}
+th{background:#0d0d0d;color:var(--creamtext);text-align:left;padding:10px 12px;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+td{padding:9px 12px;border-bottom:1px solid var(--lined);color:var(--ink)} td.r,th.r{text-align:right}
+tr:nth-child(even) td{background:#faf7f0}
 .mkt{margin-bottom:13px}
 .mkt-top{display:flex;justify-content:space-between;font-size:13.5px;margin-bottom:4px}
-.mkt-name{font-weight:600} .mkt-fig{color:var(--muted)} .mkt-fig b{color:var(--cream)}
+.mkt-name{font-weight:600} .mkt-fig{color:var(--muted)} .mkt-fig b{color:var(--ink)}
 .mkt-sub{font-size:11.5px;color:var(--muted);margin-top:3px}
-.chips span{display:inline-block;border:1px solid var(--gold);color:var(--gold);border-radius:20px;
+.chips span{display:inline-block;border:1px solid var(--gold);color:var(--goldd);border-radius:20px;
 padding:4px 12px;font-size:12px;margin:0 6px 6px 0}
 .ment3{grid-template-columns:repeat(3,1fr)}
 /* org chart */
 .org{text-align:center}
-.org-top{display:inline-block;background:linear-gradient(135deg,var(--gold),#b8901d);color:#141414;
+.org-top{display:inline-block;background:linear-gradient(135deg,#d8ab30,#b8901d);color:#141414;
 border-radius:12px;padding:16px 34px;min-width:280px}
 .org-top b{font-family:Georgia,serif;font-size:20px;display:block}
 .org-top span{font-size:12px;letter-spacing:.06em;text-transform:uppercase}
@@ -93,29 +94,32 @@ border-radius:12px;padding:16px 34px;min-width:280px}
 .pillar{display:flex;flex-direction:column;align-items:center}
 .pillar .drop{width:2px;height:18px;background:var(--gold)}
 .node{background:var(--panel);border:1px solid var(--line);border-top:3px solid var(--gold);
-border-radius:10px;padding:13px 14px;width:100%;min-height:78px;display:flex;flex-direction:column;justify-content:center}
-.node .role{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--gold);margin-bottom:3px}
-.node b{font-size:14.5px;font-family:Georgia,serif}
+border-radius:10px;padding:13px 14px;width:100%;min-height:78px;display:flex;flex-direction:column;justify-content:center;box-shadow:0 1px 2px rgba(0,0,0,.04)}
+.node .role{font-size:10.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--goldd);margin-bottom:3px}
+.node b{font-size:14.5px;font-family:Georgia,serif;color:var(--ink)}
 .node.sys{border-top-color:var(--gold2);background:var(--panel2)}
 .node.sys small{color:var(--muted);font-size:11px}
 .sub-stem{width:2px;height:14px;background:var(--line);margin:0 auto}
 .subnode{background:var(--panel2);border:1px solid var(--line);border-radius:8px;padding:9px 12px;width:100%}
 .subnode .role{font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
-.subnode b{font-size:12.5px}
-.cap{margin-top:20px;background:linear-gradient(135deg,#1c1810,#241d0f);border:1px solid var(--gold);
-border-radius:10px;padding:16px 22px;text-align:center;font-size:14px}
+.subnode b{font-size:12.5px;color:var(--ink)}
+.cap{margin-top:20px;background:#faf3df;border:1px solid var(--gold);
+border-radius:10px;padding:16px 22px;text-align:center;font-size:14px;color:var(--ink)}
 .ment{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .ment .m{background:var(--panel2);border-left:3px solid var(--gold);border-radius:6px;padding:12px 14px}
-.ment .m b{display:block;margin-bottom:3px} .ment .m p{font-size:12.5px;color:var(--muted)}
-.exp b.title{font-size:15px} .exp .yrs{color:var(--gold);font-size:12px;font-weight:600}
-.exp ul{margin:8px 0 16px 18px} .exp li{font-size:13px;color:#d8d2c8;margin:4px 0}
-.foot{text-align:center;padding:26px;color:var(--muted);font-size:12px;letter-spacing:.06em}
-.cta{display:block;width:max-content;margin:8px auto 0;background:linear-gradient(135deg,var(--gold),#b8901d);
+.ment .m b{display:block;margin-bottom:3px;color:var(--ink)} .ment .m p{font-size:12.5px;color:var(--muted)}
+.exp b.title{font-size:15px;color:var(--ink)} .exp .yrs{color:var(--goldd);font-size:12px;font-weight:600}
+.exp ul{margin:8px 0 16px 18px} .exp li{font-size:13px;color:#3c382f;margin:4px 0}
+.note{font-size:11px;color:var(--muted);margin-top:12px;font-style:italic}
+.foot{text-align:center;padding:26px;color:#b9b2a6;font-size:12px;letter-spacing:.06em;background:#0d0d0d}
+.cta{display:block;width:max-content;margin:8px auto 0;background:linear-gradient(135deg,#d8ab30,#b8901d);
 color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radius:30px;font-size:16px}
 @media(max-width:760px){.pipe-stats,.pipe-cols,.two,.ment,.tech,.org-row,.topbar{grid-template-columns:1fr}
 .hero h1{font-size:40px} section{padding:26px 22px} .hero{padding:26px 22px}
-.topbar>div{border-right:none;border-bottom:1px solid rgba(0,0,0,.25)}}
-@media print{body{background:#fff} .wrap{max-width:100%}}
+.topbar>div{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}}
+@media print{html{zoom:.72} .wrap{max-width:100%}
+.pcol,.card,.node,.tcard,.ment .m,.pstat,tr,.total-strip,.cap{break-inside:avoid}}
+@page{size:Letter;margin:0}
 </style></head>
 <body><div class="wrap">
 
@@ -220,9 +224,10 @@ color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radi
 
 <section class="divider">
   <div class="two">
-    <div><h2 class="sec">Transactions by Year</h2><div class="bar-row"><span class="bar-yr">2017</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="bar-val">28</span></div><div class="bar-row"><span class="bar-yr">2018</span><div class="bar-track"><div class="bar-fill" style="width:71%"></div></div><span class="bar-val">29</span></div><div class="bar-row"><span class="bar-yr">2019</span><div class="bar-track"><div class="bar-fill" style="width:49%"></div></div><span class="bar-val">20</span></div><div class="bar-row"><span class="bar-yr">2020</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-val">33</span></div><div class="bar-row"><span class="bar-yr">2021</span><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><span class="bar-val">31</span></div><div class="bar-row"><span class="bar-yr">2022</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">41</span></div><div class="bar-row"><span class="bar-yr">2023</span><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><span class="bar-val">31</span></div><div class="bar-row"><span class="bar-yr">2024</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">41</span></div><div class="bar-row"><span class="bar-yr">2025</span><div class="bar-track"><div class="bar-fill" style="width:59%"></div></div><span class="bar-val">24</span></div></div>
-    <div><h2 class="sec">Earnings by Year</h2><div class="bar-row"><span class="bar-yr">2017</span><div class="bar-track"><div class="bar-fill gold2" style="width:49%"></div></div><span class="bar-val">$351K</span></div><div class="bar-row"><span class="bar-yr">2018</span><div class="bar-track"><div class="bar-fill gold2" style="width:67%"></div></div><span class="bar-val">$481K</span></div><div class="bar-row"><span class="bar-yr">2019</span><div class="bar-track"><div class="bar-fill gold2" style="width:39%"></div></div><span class="bar-val">$278K</span></div><div class="bar-row"><span class="bar-yr">2020</span><div class="bar-track"><div class="bar-fill gold2" style="width:83%"></div></div><span class="bar-val">$599K</span></div><div class="bar-row"><span class="bar-yr">2021</span><div class="bar-track"><div class="bar-fill gold2" style="width:86%"></div></div><span class="bar-val">$622K</span></div><div class="bar-row"><span class="bar-yr">2022</span><div class="bar-track"><div class="bar-fill gold2" style="width:99%"></div></div><span class="bar-val">$714K</span></div><div class="bar-row"><span class="bar-yr">2023</span><div class="bar-track"><div class="bar-fill gold2" style="width:68%"></div></div><span class="bar-val">$490K</span></div><div class="bar-row"><span class="bar-yr">2024</span><div class="bar-track"><div class="bar-fill gold2" style="width:100%"></div></div><span class="bar-val">$720K</span></div><div class="bar-row"><span class="bar-yr">2025</span><div class="bar-track"><div class="bar-fill gold2" style="width:35%"></div></div><span class="bar-val">$251K</span></div></div>
+    <div><h2 class="sec">Transactions by Year</h2><div class="bar-row"><span class="bar-yr">2017</span><div class="bar-track"><div class="bar-fill" style="width:68%"></div></div><span class="bar-val">28</span></div><div class="bar-row"><span class="bar-yr">2018</span><div class="bar-track"><div class="bar-fill" style="width:71%"></div></div><span class="bar-val">29</span></div><div class="bar-row"><span class="bar-yr">2019</span><div class="bar-track"><div class="bar-fill" style="width:49%"></div></div><span class="bar-val">20</span></div><div class="bar-row"><span class="bar-yr">2020</span><div class="bar-track"><div class="bar-fill" style="width:80%"></div></div><span class="bar-val">33</span></div><div class="bar-row"><span class="bar-yr">2021</span><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><span class="bar-val">31</span></div><div class="bar-row"><span class="bar-yr">2022</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">41</span></div><div class="bar-row"><span class="bar-yr">2023</span><div class="bar-track"><div class="bar-fill" style="width:76%"></div></div><span class="bar-val">31</span></div><div class="bar-row"><span class="bar-yr">2024</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div><span class="bar-val">41</span></div><div class="bar-row"><span class="bar-yr">2025*</span><div class="bar-track"><div class="bar-fill" style="width:59%"></div></div><span class="bar-val">24</span></div></div>
+    <div><h2 class="sec">Earnings by Year</h2><div class="bar-row"><span class="bar-yr">2017</span><div class="bar-track"><div class="bar-fill gold2" style="width:49%"></div></div><span class="bar-val">$351K</span></div><div class="bar-row"><span class="bar-yr">2018</span><div class="bar-track"><div class="bar-fill gold2" style="width:67%"></div></div><span class="bar-val">$481K</span></div><div class="bar-row"><span class="bar-yr">2019</span><div class="bar-track"><div class="bar-fill gold2" style="width:39%"></div></div><span class="bar-val">$278K</span></div><div class="bar-row"><span class="bar-yr">2020</span><div class="bar-track"><div class="bar-fill gold2" style="width:83%"></div></div><span class="bar-val">$599K</span></div><div class="bar-row"><span class="bar-yr">2021</span><div class="bar-track"><div class="bar-fill gold2" style="width:86%"></div></div><span class="bar-val">$622K</span></div><div class="bar-row"><span class="bar-yr">2022</span><div class="bar-track"><div class="bar-fill gold2" style="width:99%"></div></div><span class="bar-val">$714K</span></div><div class="bar-row"><span class="bar-yr">2023</span><div class="bar-track"><div class="bar-fill gold2" style="width:68%"></div></div><span class="bar-val">$490K</span></div><div class="bar-row"><span class="bar-yr">2024</span><div class="bar-track"><div class="bar-fill gold2" style="width:100%"></div></div><span class="bar-val">$720K</span></div><div class="bar-row"><span class="bar-yr">2025*</span><div class="bar-track"><div class="bar-fill gold2" style="width:35%"></div></div><span class="bar-val">$251K</span></div></div>
   </div>
+  <div class="note">* 2025 shown year-to-date at time of reporting; full-year figures on request.</div>
 </section>
 
 <section class="divider">
