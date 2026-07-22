@@ -23,7 +23,7 @@ display:flex;gap:26px;align-items:center;flex-wrap:nowrap;color:var(--creamtext)
 .hero .role{letter-spacing:.2em;text-transform:uppercase;font-size:12px;color:#b9b2a6;margin:10px 0 12px}
 .contact{font-size:13px;color:#cfc8bd}
 .contact span{margin-right:16px;white-space:nowrap;display:inline-block}
-.badge{flex:0 0 auto;align-self:center;text-align:center;border:1px solid var(--gold);border-radius:12px;padding:14px 22px}
+.badge{flex:0 0 auto;align-self:center;margin-left:auto;text-align:center;border:1px solid var(--gold);border-radius:12px;padding:14px 22px}
 .badge .big{font-family:Georgia,serif;font-size:30px;color:var(--gold);font-weight:700}
 .badge .sm{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#b9b2a6}
 /* topbar */
@@ -139,7 +139,7 @@ color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radi
 .cred li{position:relative;padding:5px 0 5px 20px;font-size:11.5px;color:#d8d1c6;border-bottom:1px solid #262626}
 .cred li:last-child{border-bottom:none}
 .cred li::before{content:"\2713";position:absolute;left:0;color:var(--gold);font-weight:700}
-@media(max-width:760px){.pipe-stats,.pipe-cols,.two,.ment,.tech,.org-row,.topbar,.cols{grid-template-columns:1fr}
+@media screen and (max-width:760px){.pipe-stats,.pipe-cols,.two,.ment,.tech,.org-row,.topbar,.cols{grid-template-columns:1fr}
 .hero h1{font-size:40px} section{padding:26px 22px} .hero{padding:26px 22px;flex-wrap:wrap}
 .topbar>div{border-right:none;border-bottom:1px solid rgba(255,255,255,.08)}}
 @media print{.wrap{max-width:100%;width:100%}
@@ -148,6 +148,8 @@ color:#141414;font-weight:700;text-decoration:none;padding:14px 34px;border-radi
 .org-row{grid-template-columns:repeat(4,1fr)} .ment3{grid-template-columns:repeat(3,1fr)}
 .pipe-cols,.two{grid-template-columns:1fr 1fr} .cols{grid-template-columns:1fr 250px}
 .topbar>div{border-bottom:none}
+section{padding:20px 40px} .hero{padding:26px 44px} .foot{padding:16px}
+.cols>.main{padding:22px 28px 18px 44px} .cols>.side{padding:22px 22px}
 .pcol,.card,.node,.tcard,.ment .m,.pstat,tr,.total-strip,.cap,.hero{break-inside:avoid}}
 @page{size:Letter;margin:0}
 </style></head>
